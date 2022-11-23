@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #24252a;
+}
+
+a,
+button {
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #c5c5c0;
+}
+
+/* Själva navbaren*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    border-bottom: #24252a;
+}
+
+.header {
+    color: white;
+}
+
+.dropdown {
+    display: block;
+    position: absolute;
+    background-color: #24252a;
+
+}
+
+.dropdown ul {
+    display: block;
+}
+
+/*Detta är till den gröna effecten/ animation under navbar*/
+
+nav {
+    border: 2px;
+    color: green;
+    border-top-color: #24252a;
+    border-left-color: #24252a;
+    border-left-color: #24252a;
+    border-style: solid;
+    animation-name: animation-navbar;
+    animation-duration: 3s;
+    animation-delay: 500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/* keyframe är en automatisk animation, under navbaren om vilka färger den ska byta till */
+
+@keyframes animation-navbar {
+    33% {
+        border-bottom-color: black;
+    }
+
+    33% {
+        border-bottom-color: green;
+    }
+
+    33% {
+        border-bottom-color: #173513;
+    }
+}
+
+/*Detta är till första sidan, alltså till hem sidan*/
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+.content .textbox {
+    position: relative;
+    max-width: 600px;
+    height: 2000px;
+}
+
+.content .textbox h2 {
+    color: rgba(255, 255, 255, 0.413);
+    font: 3em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.content .textbox h2 span {
+    color: #017431;
+    font-size: 1.8em;
+    font-weight: 900;
+}
+
+imgbox {
+    height: 2200px;
+    width: 700px;
+}
+
+p {
+    color: rgba(255, 255, 255, 0.413);
+}
+
+.content .textbox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 5px 10px;
+    background: #017431;
+    color: fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* Icetea bilden placering */
+.content .imgbox {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    margin-top: -1500px;
+    padding-right: 50px;
+}
+
+/*Gröna circeln , bakgrund*/
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #017431;
+    clip-path: circle(550px at right 700px);
+}
+
+/*Navbar hover*/
+a:hover {
+    background-color: #04ae4b98;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+/* Produkt sidan*/
+
+.row-1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+.product1:hover {
+    background-image: url(https://o.remove.bg/downloads/501e1e5b-2baa-45fc-97c8-5e3dc1b3c0d7/Lemon-green1_540x-removebg-preview-removebg-preview.png);
+}
+
+.product1:hover img {
+    opacity: 0;
+}
+
+.product1 img {
+    transition-duration: 300ms;
+    transition-delay: 50ms;
+    margin-right: 100px;
+}
+
+.product2:hover {
+    background-image: url(https://o.remove.bg/downloads/36daafd3-6b08-468d-a94d-ac699cf789ff/Arya-FTGFOP1-CH3_540x-removebg-preview.png);
+}
+
+.product2:hover img {
+    opacity: 0;
+}
+
+.product2 img {
+    transition-duration: 300ms;
+    transition-delay: 50ms;
+    margin-right: 100px;
+}
+
+.product3:hover {
+    background-image: url(https://o.remove.bg/downloads/2e9b7285-5131-4a05-ab9c-04d88d07e7e3/MenthosGreenTea_2_540x-removebg-preview.png);
+}
+
+.product3:hover img {
+    opacity: 0;
+}
+
+.row-1 {
+    margin-left: 10%;
+}
+
+.product3 img {
+    transition-duration: 300ms;
+    transition-delay: 50ms;
+    margin-right: 100px;
+}
+
+.title {
+    text-align: center;
+    margin-top: 25px;
+    color: #017431;
+}
+
+.row-1 img {
+    width: 400px;
+    margin-left: -80px;
+}
+
+h5 h3 {
+    color: #017431;
+}
+
+
+/*Om oss sektion, slideshow*/
+
+
+
+.overlay-3 {
+    font-family: 'Oswald', sans-serif;
+    background-color: #498160;
+    position: relative;
+    display: inline-block;
+    padding: 100px;
+    margin: 100px;
+    box-shadow: 0 0 10px 10px;
+    opacity: 0.7;
+}
+
+.overlay-3:hover {
+    transform: scale(1.2);
+    transition-duration: 800ms;
+    transition-delay: 1ms;
+}
+
+.overlay-3 {
+    margin-top: 150px;
+}
+
+
+/*RGB OM OSS animation =först gör vi en kvadrant och centrerar den längst upp, sen lägger vi färger (before) som vi sedan i 
+@keyframes animerar så den spinnar 360 grader samt sedan justerar lite. */
+
+
+.rgb-box {
+    background-color: #151320;
+}
+
+.rgb-box {
+    height: 100px;
+    width: 250px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    margin-top: -270px;
+    align-items: center;
+}
+
+.rgb-box:before {
+    content: "";
+    height: 150%;
+    width: 250%;
+    position: absolute;
+    background: conic-gradient(#02f744,
+            #04c62a,
+            #fff020,
+            #f49f01,
+            #07bcf3,
+            #0211e4,
+            #2203e6);
+    left: -25%;
+    top: -25%;
+    animation: spin 1.5s infinite linear;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.rgb-box:after {
+    content: "OM OSS";
+    position: absolute;
+    background-color: #1c1b29;
+    height: 93%;
+    width: 93%;
+    top: 3.5%;
+    left: 3.5%;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 6px;
+    display: grid;
+    place-items: center;
+
+}
+
+/*Kontakt*/
+
+
+.overlay {
+    background-color: #498160;
+    position: relative;
+    display: inline-block;
+    padding: 30px;
+    margin: 30px;
+}
+
+.contact {
+    height: -700px;
+}
+
+.farm-background {
+    width: 100%;
+    height: 70%;
+    margin-top: 50px;
+    object-fit: cover;
+}
+
+.contact {
+    font-family: 'Oswald', sans-serif;
+}
+
+.overlay {
+    margin-top: -470px;
+    margin-left: 100px;
+    transition-duration: 500ms;
+    transition-delay: 1ms;
+}
+
+.overlay {
+    box-shadow: 0 0px 10px 10px;
+    color: rgba(36, 35, 36, 0.566);
+}
+
+/* overlay är backgrund på texten sedan overlay:hover blir då animationen när man hoverar på backgrunden, transition-duration är 
+Hur snabb/ långsamm animationen ska vara och transform är om den ska minska eller bli större vid hover.*/
+
+.overlay:hover {
+    transform: scale(1.2);
+    transition-duration: 500ms;
+}
+
+.DunderTea {
+    width: 75%;
+    margin-right: 150px;
+}
+
+/*Dokumentation */
+
+.overlay-2 {
+    font-family: 'Oswald', sans-serif;
+    background-color: #498160;
+    position: relative;
+    display: inline-block;
+    padding: 100px;
+    margin: 100px;
+    box-shadow: 0 0 10px 10px;
+    opacity: 0.7;
+}
+
+.overlay-2:hover {
+    transform: scale(0.6);
+    transition-duration: 800ms;
+    transition-delay: 1ms;
+    rotate: 360deg;
+}
+
+/*DROPDOWN MENU*/
+
+.dropbutton {
+    background-color: #04AA6D;
+    color: #24252a;
+    border: none;
+    background-color: #017431;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    background-color: #017431;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #24252a;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content a:hover {
+    background-color: #017431;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.dropdown {
+    background-color: #017431;
+}
